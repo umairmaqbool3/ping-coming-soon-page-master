@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container row">
+    <h2>PING<span class="dot">.</span></h2>
+    <h1>We are launching <span class="soon_text"><b>soon!</b></span></h1>
+    <p class="subscribe_text">Subscribe and get notified</p> 
+
+    <form id="form-notify" novalidate>
+      <input type="email" name="email" placeholder="Your email address..." class="email_input" required/>
+      <button type="submit"  class="myButton">Notify Me</button><br>
+      <span class="error-text">Please provide a valid email address</span>
+    </form>
+
+    <img src="images/illustration-dashboard.png" alt="dashboard_image" class="dashboard_image" />
+
+    <p>
+      <span class="icons"><i class="fab fa-facebook-f"></i></span>
+      <span class="icons"><i class="fab fa-twitter"></i></span>
+      <span class="icons"><i class="fab fa-instagram"></i></span>
+    </p>
+
+    <p class="copyrights">&copy; Copyright Ping. All rights reserved.</p>
+  </div>
+
+
+  
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Umair Maqbool</a>.
+    </p>
+  </footer>
+  <script>
+    // const email = document.querySelector(".email_input");
+    // const text_error = document.querySelector(".error-text"); 
+    // let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    // function check(){
+    //   if(email.value.match(regExp)){
+    //     text_error.style.display="none";
+    //   }
+    //   else{
+    //     text_error.style.display = "inline";
+    //     email.style.borderColor="red";
+    //   }
+    // } 
+
+    window.addEventListener("DOMContentLoaded", () => {});
+
+document.getElementById("form-notify").addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (this.email.checkValidity()) {
+    // this.email.classList.remove("error");
+    alert('Hi its called');
+  } else {
+    this.email.classList.add("invalid");
+    const errorText = document.querySelector(".error-text");
+    errorText.style.display="inline";
+  }
+});
+  </script>
+</body>
+</html>

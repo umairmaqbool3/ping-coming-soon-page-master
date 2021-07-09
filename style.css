@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 3em;
+}
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1128px;
+    text-align: center;
+}
+
+.dot{
+    color: hsl(223, 87%, 63%);
+}
+
+h2{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 8px;
+}
+
+.soon_text{
+    color: black;
+}
+
+p{
+    color: hsl(0, 0%, 59%);
+}
+
+.subscribe_text{
+    margin-bottom: 2em;
+}
+
+.myButton {
+	background-color:#4d7cf3;
+	border-radius:28px;
+	border:1px solid #4d7cf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 38px;
+	text-decoration:none;
+    margin-left: 14px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.myButton:hover {
+	background-color:#4d7cf3;
+}
+/* .myButton:active {
+	position:relative;
+	top:1px;
+} */
+
+.email_input{
+    margin: 20px auto;
+    background-color:#FFFFFF;
+	border:1px solid #d6cfd6;
+	border-radius:28px;
+	color:#d6cfd6;
+	font-family:Arial;
+	font-size:17px;
+    opacity: 0.7;
+    width: 20em;
+    height: 2.5em;
+	padding:24px 18px;
+}
+
+.invalid {
+    border:1px solid red;
+} 
+
+
+.dashboard_image{
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.icons{
+    background-color: none;
+    border-radius: 50%;
+    border: 0.3px solid hsl(0, 0%, 59%, 0.18);
+    padding: 11px 4px;
+    /* opacity: .56; */
+    margin-left: 19px;
+    cursor: pointer;
+}
+
+.icons i{
+    color: #4B7DF6;
+    width: 37px;
+    height: 15px;
+    opacity: 1;
+}
+
+.icons:hover{
+    background-color: #4B7DF6;
+    /* color: white; */
+}
+
+.icons:hover .fab{
+    color:white;
+}
+
+.copyrights{
+    margin: 35px auto;
+    opacity: .8;
+}
+
+/* .error-text{
+    display: none;
+} */
+.error-text{
+    position: relative;
+    margin-top: 40px;
+    color: red;
+    font-style: italic;
+    text-align: left;
+    display:none;
+}
+
+
+@media screen and (max-width:520px) {
+    .myButton{
+        width: 20em;
+        margin-left: 0;
+    }
+
+    .dashboard_image{
+        width: 400px;
+        margin: 70px auto;
+        margin-left: -23px;
+    }
+
+    h1{
+        font-size: 1.7em;
+        margin-top: 1em;
+    }
+
+    .email_input{
+        margin-bottom: 14px;
+    }
+
+    .error-text{
+        position: absolute;
+        margin-top: 6px;
+        margin-left: -170px;
+        color: red;
+        font-style: italic;
+        text-align: left;
+        display:none;
+    }
+}
